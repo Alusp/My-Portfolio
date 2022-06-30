@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%22");
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a h1 {
+  color: #6070ff;
+  font-size: 26px;
+}
+
+nav .menu {
+  width: 30px;
+  color: #6070ff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-image: url("images/header-shapes\ mobile.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  margin-top: 6rem;
+}
+
+.header2 {
+  width: 327px;
+  height: 150px;
+  top: 114px;
+  left: 24px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.body2 p {
+  width: 100%;
+  height: 100px;
+  top: 276px;
+  left: 24px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.conect p {
+  margin-top: 5em;
+  margin-bottom: 0.5em;
+  width: 150px;
+  height: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  size: 24px;
+  color: #7f8cff;
+}
+
+.icons ul {
+  margin-top: 1em;
+  margin-bottom: 4em;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 200px;
+  padding-left: 0;
+  align-items: center;
+}

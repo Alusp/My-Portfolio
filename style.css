@@ -35,14 +35,12 @@ nav .menu {
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
-  
 }
 
 .content {
   padding-left: 1rem;
   padding-right: 2rem;
   margin-top: 6rem;
-
 }
 
 .header2 {
@@ -91,7 +89,6 @@ nav .menu {
   list-style: none;
   justify-content: space-between;
   width: 200px;
- 
   padding-left: 0;
   align-items: center;
 }

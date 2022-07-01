@@ -196,7 +196,7 @@ nav .menu {
   border-radius: 10px;
 }
 
-.first-links ul {
+.first-links {
   display: flex;
   font-size: 13px;
   font-weight: 600px;
@@ -206,6 +206,17 @@ nav .menu {
   padding: 0.5em;
   gap: 0.9rem;
   list-style: none;
+}
+
+.canopy-style {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.first-links a {
+  color: #7a869a;
 }
 
 .get-resume a {

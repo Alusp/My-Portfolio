@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%22");
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap%22";
 
 /* :root{
   --f-poppins: Poppins, Arial, Helvetica, sans-serif;
@@ -7,18 +7,22 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: #e5e5e5;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: white;
 }
+
 a {
   text-decoration: none;
 }
+
 .bg-white {
   background-color: white;
 }
+
 header {
   width: 100%;
   height: 50px;
@@ -112,15 +116,16 @@ nav .menu {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 88px;
+
   /* margin-block: 114px; */
   place-items: center;
-  
 }
 
 .card-image-container {
   max-width: 100%;
   border-radius: 8px;
 }
+
 .card-image {
   width: 327px;
   height: 220px;
@@ -130,30 +135,31 @@ nav .menu {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .card-2-image {
   width: 100%;
   padding-top: 75%;
   background-image: url("images/Snapshoot3.png");
   background-repeat: no-repeat;
   background-size: cover;
-   
 }
+
 .card-3-image {
   width: 100%;
   padding-top: 75%;
   background-image: url("images/Snapshoot4.png");
   background-repeat: no-repeat;
   background-size: cover;
-   
 }
+
 .card-4-image {
   width: 100%;
   padding-top: 75%;
   background-image: url("images/Snapshoot5.png");
   background-repeat: no-repeat;
   background-size: cover;
-   
 }
+
 .card {
   width: 327px;
   height: 552px;
@@ -162,8 +168,8 @@ nav .menu {
   padding: 1em;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-
 }
+
 .card-content {
   width: 295px;
   display: flex;
@@ -171,12 +177,25 @@ nav .menu {
   justify-content: center;
   align-items: flex-start;
 }
+
 .card-content h3 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 44px;
   color: #172b4d;
 }
+
+.see-project {
+  margin-top: 1em;
+}
+
+.see-project a {
+  text-decoration: none;
+  border: 1px solid #5151d2;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+}
+
 .first-links ul {
   display: flex;
   font-size: 13px;
@@ -187,6 +206,14 @@ nav .menu {
   gap: 0.9rem;
   list-style: none;
 }
+
+.get-resume a {
+  text-decoration: none;
+  border: 1px solid #5151d2;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+}
+
 .first-links ul li a {
   text-decoration: none;
   font-weight: 600px;
@@ -197,7 +224,7 @@ nav .menu {
   line-height: 24px;
   font-size: 15px;
   font-weight: 400;
-  margin: 20px 0px 12px;
+  margin: 20px 0 12px;
   color: #344563;
 }
 
@@ -205,12 +232,12 @@ nav .menu {
   display: flex;
   margin-bottom: 1rem;
   justify-content: flex-start;
-  padding: 0px 50px 0px 2px;
+  padding: 0 50px 0 2px;
   list-style: none;
   gap: 0.5rem;
 }
+
 .second-links ul li a {
-  border: 1px solid #5151d2;
   padding: 0.2em 0.6em;
   border-radius: 10px;
   text-decoration: none;
@@ -218,24 +245,18 @@ nav .menu {
   background-color: #ebebff;
   color: #6070ff;
 }
-.see-project {
-  margin-top: 1em;
-}
-.see-project a {
-  text-decoration: none;
-  border: 1px solid #5151d2;
-  padding: 0.7em 1em;
-  border-radius: 10px;
-}
+
 .mt-post {
   width: 300px;
 }
+
 .second-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top-right-radius: 50px;
 }
+
 .lang-dropdown {
   width: 400px;
   display: flex;
@@ -243,11 +264,13 @@ nav .menu {
   align-items: center;
   padding: 1em;
 }
+
 .lang-dropdown h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
 }
+
 .dropdown {
   background-image: url("images/icdropdown.png");
   background-size: contain;
@@ -256,6 +279,7 @@ nav .menu {
   width: 20px;
   margin-left: auto;
 }
+
 .technologies {
   width: 100%;
   display: flex;
@@ -264,6 +288,7 @@ nav .menu {
   align-items: center;
   gap: 1rem;
 }
+
 .tech {
   width: 400px;
   display: flex;
@@ -275,6 +300,7 @@ nav .menu {
   background: #f7f7f9;
   border-radius: 8px;
 }
+
 .drop-right {
   background-image: url("images/icdropdown.png");
   background-size: contain;
@@ -284,10 +310,12 @@ nav .menu {
   margin-left: auto;
   transform: rotate(-90deg);
 }
+
 .border-bottom {
-  border-bottom: 1px solid rgba(99, 98, 98, 0.3);
+  border-bottom: 1px solid rgb(99 98 98 / 30%);
   background-color: white;
 }
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -296,31 +324,24 @@ nav .menu {
   padding: 1em;
   border: 1px solid #dfe1e6;
   border-top-right-radius: 30px;
-  
-  
 }
 
 .first-section {
   padding-top: 5em;
- 
 }
+
 .first-section h3 {
   width: 200px;
- font-weight: 700;
- font-size: 40px;
- line-height: 52px;
-/* or 130% */
-display: flex;
-align-items: center;
-color: #172B4D;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  /* or 130% */
+  display: flex;
+  align-items: center;
+  color: #172b4d;
 }
+
 .first-section p {
   margin-top: 1.5em;
-  
-  }
-  .get-resume a {
-  text-decoration: none;
-  border: 1px solid #5151d2;
-  padding: 0.7em 1em;
-  border-radius: 10px;
-  }
+}

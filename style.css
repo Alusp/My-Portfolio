@@ -290,6 +290,27 @@ nav .menu {
   color: #fff;
 }
 
+.disable {
+  pointer-events: none;
+  text-decoration: none;
+  border: 1px solid #c1c7d0;
+  width: 114px;
+  padding: 0.7em 1em;
+  height: 48px;
+  border-radius: 8px;
+  left: 564px;
+  top: calc(50% - 48px / 2 + 57.5px);
+}
+
+.mps-see-project {
+  background-color: #e5e5e5;
+  border: 1px solid #5e6c84;
+  color: #5e6c84;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .get-resume a:hover {
   background-color: #6070ff;
   color: #fff;
@@ -484,7 +505,7 @@ nav .menu {
   padding-top: 0;
 }
 
-#section-5 .s5 .lc {
+#section-5 .s5 h2 {
   width: 180px;
   height: 24px;
   font-style: normal;
@@ -495,6 +516,33 @@ nav .menu {
   padding-left: 0;
   margin-top: 0;
   padding-top: 0;
+}
+
+.langv ul {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  padding: 0 50px 0 2px;
+  list-style: none;
+  gap: 6rem;
+}
+
+.frame ul {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  padding: 0 50px 0 2px;
+  list-style: none;
+  gap: 6rem;
+}
+
+.skill ul {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  padding: 0 50px 0 2px;
+  list-style: none;
+  gap: 10.5rem;
 }
 
 #section-5 .s5 .base-icon-5 ul {

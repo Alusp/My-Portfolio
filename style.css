@@ -5,7 +5,8 @@
 } */
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  background-color: #e5e5e5;
+
+  /* background-color: #e5e5e5; */
 }
 
 button:hover {
@@ -16,7 +17,8 @@ button:hover {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: white;
+
+  /* background-color: white; */
 }
 
 a {
@@ -527,6 +529,10 @@ li {
   padding-top: 0;
 }
 
+.forms h2 {
+  margin-top: 60px;
+}
+
 #section-5 .s5 h2 {
   width: 180px;
   height: 24px;
@@ -632,4 +638,130 @@ li {
 .frameworks,
 .skills {
   border-bottom: 1px solid #dfe1e6;
+}
+
+/* added Contact form here */
+.carto {
+  width: 100%;
+}
+
+.contactt {
+  background: #6070ff url("images/contacts.png") no-repeat right top;
+  background-size: 51.8%;
+  border-top-left-radius: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -1.5rem;
+}
+
+.contactme-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.contactme-body {
+  font-style: normal;
+  font-family: "poppins", sans-serif;
+  width: 327px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  display: flex;
+}
+
+.form-name,
+.form-email {
+  width: 327px;
+  border-radius: 8px;
+  height: 48px;
+  margin: 5px 0;
+  border: 1px solid#cfd8dc;
+}
+
+.form-message {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.submission {
+  font-family: inherit;
+  display: flex;
+  margin-top: -30px;
+  margin-left: 25px;
+  padding-top: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+  justify-items: center;
+  align-self: flex-start;
+  border: 1px solid #6070ff;
+  background-color: white;
+  border-radius: 8px;
+  width: 140px;
+  height: 48px;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.submission :disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+}
+
+.submission :hover:enabled {
+  background: #6070ff;
+  color: white;
+  box-shadow: calc(0px + 0px) 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.submission :active:enabled {
+  background: #2230d2;
+  color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.form-name:hover,
+.form-email:hover,
+.form-message:hover {
+  transform: translate(10px, 0);
+}
+
+.contactme-body:hover {
+  transform: translate(-10px, 0);
+}
+
+.error {
+  color: #fff;
+}
+
+.shapes {
+  margin-top: 21px;
+  margin-left: 120px;
+  margin-bottom: 8px;
 }

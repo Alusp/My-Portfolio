@@ -2,7 +2,7 @@
 
 # Project Name
 
-This project contains My Portfolio for mobile.It shows you everything about me and the services I can provide.
+This project contains My Portfolio for responsive mobile and desktop version.It shows you everything about me and the services I can provide.
 
 ## Built With
 

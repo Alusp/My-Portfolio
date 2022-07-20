@@ -5,33 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alusine's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <a href="index.html"><h1>My Logo</h1></a>
-      <nav>
+      <nav class="nav-yunus">
+        <i class="menu bi bi-list"></i>
         <ul class="menu-items">
-          <li class="item"><a href="#">Portfolio</a></li>
-          <li class="item"><a href="#">About</a></li>
-          <li class="item"><a href="#">Contact</a></li>
+          <li class="close"><i class="bi bi-x-lg"></i></li>
+          <li class="item"><a href="#portfolio">Portfolio</a></li>
+          <li class="item"><a href="#about">About</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
         </ul>
-        <a href="index.html"
-          ><svg
-            class="menu w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </a>
       </nav>
     </header>
 
@@ -57,8 +44,7 @@
               </li>
               <li>
                 <a href="#"
-                  ><img src="images/Linkedinicon.svg" alt="LinkedIn"
-                /></a>
+                  ><img src="images/Linkedinicon.svg" alt="LinkedIn"/></a>
               </li>
               <li>
                 <a href="#"><img src="images/Vector-2.svg" alt="Mark" /></a>
@@ -74,7 +60,7 @@
         </div>
       </section>
       <!-- End of first headline -->
-      <section class="works">
+      <section class="works" id="portfolio">
         <div class="card">
           <div class="card-image-container card-image"></div>
           <div class="text1">
@@ -82,7 +68,6 @@
               <h3>Tonic</h3>
               <div class="first-links">
                 <a href="#" class="canopy-style">CANOPY</a>
-
                 <span class="canopy-image"></span>
                 <a href="#">Back End Dev</a>
 
@@ -194,7 +179,7 @@
           </div>
         </div>
         <div id="section-5" class="contain5">
-          <div class="s5">
+          <div class="s5" id="about">
             <div id="about1">
               <div class="about-text">
                 <div class="head-text">
@@ -273,7 +258,7 @@
 
         <!-- Contact Form here -->
 
-        <section class="contactt">
+        <section class="contactt" id="contact">
           <div class="ttry">
             <form
               class="forms"
@@ -320,5 +305,6 @@
         </section>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

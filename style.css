@@ -1,12 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins&display=swap%22";
 
-/* :root{
-  --f-poppins: Poppins, Arial, Helvetica, sans-serif;
-} */
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
-
-  /* background-color: #e5e5e5; */
 }
 
 button:hover {
@@ -17,16 +12,10 @@ button:hover {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  /* background-color: white; */
 }
 
 a {
   text-decoration: none;
-}
-
-.bg-white {
-  /* background-color: white; */
 }
 
 header {
@@ -53,14 +42,18 @@ nav .menu {
   color: #6070ff;
 }
 
-nav .menu-items {
+li {
+  list-style: none;
+}
+
+nav .menu-items li {
   display: none;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  background: url(images/head.png);
+  background: url("images/head.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,10 +88,6 @@ ul {
   flex-direction: row;
   margin: 0;
   padding-left: 0;
-}
-
-li {
-  list-style: none;
 }
 
 .body2 p {
@@ -138,8 +127,6 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 88px;
-
-  /* margin-block: 114px; */
   place-items: center;
 }
 
@@ -215,6 +202,25 @@ li {
   border-radius: 10px;
 }
 
+.first-links a {
+  color: #7a869a;
+}
+
+.get-resume a {
+  text-decoration: none;
+  border: 1px solid #5151d2;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+}
+
+.menu-open li a {
+  font-family: roboto, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #fff;
+}
+
 .first-links {
   display: flex;
   font-size: 13px;
@@ -232,17 +238,6 @@ li {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-}
-
-.first-links a {
-  color: #7a869a;
-}
-
-.get-resume a {
-  text-decoration: none;
-  border: 1px solid #5151d2;
-  padding: 0.7em 1em;
-  border-radius: 10px;
 }
 
 .first-links ul li a {
@@ -316,16 +311,6 @@ li {
   left: 564px;
   top: calc(50% - 48px / 2 + 57.5px);
 }
-
-/* .mps-see-project {
-  background-color: #e5e5e5;
-  border: 1px solid #5e6c84;
-  color: #5e6c84;
-  font-weight: 550;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 4rem;
-} */
 
 .get-resume a:hover {
   background-color: #6070ff;
@@ -653,7 +638,7 @@ li {
   border-bottom: 1px solid #dfe1e6;
 }
 
-/* added Contact form here */
+/**************** added Contact form here *****************/
 
 .contactt {
   max-width: 375px;
@@ -686,7 +671,7 @@ li {
 
 .contactme-body {
   font-style: normal;
-  font-family: "poppins", sans-serif;
+  font-family: poppins, sans-serif;
   max-width: 327px;
   font-weight: 400;
   font-size: 20px;
@@ -745,7 +730,7 @@ li {
 .submission :hover:enabled {
   background: #6070ff;
   color: white;
-  box-shadow: calc(0px + 0px) 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: calc(0px + 0px) 8px 16px rgb(64 83 252 / 24%);
 }
 
 .submission :active:enabled {
@@ -755,7 +740,7 @@ li {
 
 input::placeholder,
 textarea::placeholder {
-  font-family: "poppins", sans-serif;
+  font-family: poppins, sans-serif;
   font-size: 15px;
   padding: 10px;
 }
@@ -778,6 +763,47 @@ textarea::placeholder {
   margin-top: 21px;
   margin-left: 120px;
   margin-bottom: 8px;
+}
+
+.menu-open {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(160 155 155);
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+
+nav .menu-open li {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: center;
+}
+
+.close i {
+  display: block;
+  color: #fff;
+  font-size: 32px;
+  position: fixed;
+  right: 20px;
+  top: 20;
+}
+
+.items li img {
+  margin-right: 0;
+}
+
+.item {
+  width: 80%;
+  padding-bottom: 8px;
+  color: #fff;
+}
+
+.close {
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -834,8 +860,6 @@ textarea::placeholder {
     justify-items: flex-start;
     margin-top: 13rem;
     margin-bottom: 10rem;
-
-    /* padding-top: 60px; */
   }
 
   .header2 h1 {
@@ -847,8 +871,6 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     letter-spacing: 2.37px;
-
-    /* Theme 1 / Neutrals 1 */
     color: #091e42;
   }
 
@@ -901,7 +923,7 @@ textarea::placeholder {
   }
 
   .card-image {
-    background: url(images/bgdesktop2.svg);
+    background: url("images/bgdesktop2.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 544px;
@@ -932,7 +954,7 @@ textarea::placeholder {
   }
 
   .card-2-image {
-    background: url(images/bgdesktop3.svg);
+    background: url("images/bgdesktop3.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 544px;
@@ -940,7 +962,7 @@ textarea::placeholder {
   }
 
   .card-3-image {
-    background: url(images/bgdesktop4.svg);
+    background: url("images/bgdesktop4.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 544px;
@@ -1040,7 +1062,7 @@ textarea::placeholder {
     min-width: 1440px;
     height: 846px;
     margin-top: -250px;
-    background: #6070ff url(images/bgcontactform.svg) no-repeat;
+    background: #6070ff url("images/bgcontactform.svg") no-repeat;
     background-position: center;
     background-size: contain;
     border-top-left-radius: 8rem;
@@ -1076,5 +1098,9 @@ textarea::placeholder {
 
   #my-info {
     margin-top: 150px;
+  }
+
+  nav .menu-items li {
+    display: flex;
   }
 }

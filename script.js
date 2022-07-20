@@ -11,3 +11,8 @@ openMenu.addEventListener('click', openMobMenu);
 function closeMobMenu() {
   menuCont.classList.remove('menu-open');
 }
+closeMenu.addEventListener('click', closeMobMenu);
+
+navItem.forEach((menuItem) => {
+  menuItem.addEventListener('click', closeMobMenu);
+});

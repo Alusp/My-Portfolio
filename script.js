@@ -140,6 +140,7 @@ function projectPopup(position) {
   popup.classList.add('popup');
   portfolios.appendChild(popup);
 }
+ 
 const projectnBtn = document.querySelectorAll('.see-project');
 projectnBtn.forEach((btn, ind) => {
   btn.addEventListener('click', () => {
@@ -150,3 +151,4 @@ projectnBtn.forEach((btn, ind) => {
     });
   });
 });
+ 

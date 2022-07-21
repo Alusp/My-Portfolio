@@ -1,11 +1,12 @@
 /* eslint-disable linebreak-style */
-const openMenu = document.querySelector('.menu');
-
+const openMenu = document.querySelector('.hamburger');
+const bodyBlur = document.querySelector('.main-section');
 const navItem = document.querySelectorAll('.item');
-const menuCont = document.querySelector('.menu-items');
+const menuCont = document.querySelector('.items');
 const closeMenu = document.querySelector('.close');
 function openMobMenu() {
   menuCont.classList.add('menu-open');
+  bodyBlur.classList.add('blurred');
 }
 openMenu.addEventListener('click', openMobMenu);
 function closeMobMenu() {
@@ -20,8 +21,8 @@ navItem.forEach((menuItem) => {
 // Project pop up section
 const projects = [
   {
-    mobileImage: 'src="images/Snapshoot1.png" alt="mobile-project1"',
-    desktopImage: 'src="images/bgdesktop2.svg" alt="Desktop-project1"',
+    mobileImage: 'src="assets/Portfolio1.png" alt="mobile-project1"',
+    desktopImage: 'src="assets/desktop/Portfolio1.png" alt="Desktop-project1"',
     name: 'Tonic',
     jobDescription: {
       company: 'CANOPY',
@@ -32,8 +33,8 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
   },
   {
-    mobileImage: 'src="images/Snapshoot3.png" alt="mobile-project2"',
-    desktopImage: 'src="images/bgdesktop3.svg" alt="Desktop-project2"',
+    mobileImage: 'src="assets/Portfolio2.png" alt="mobile-project2"',
+    desktopImage: 'src="assets/desktop/Portfolio2.png" alt="Desktop-project2"',
     name: 'Multi-Post Stories',
     jobDescription: {
       company: 'FACEBOOK',
@@ -44,8 +45,8 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
   },
   {
-    mobileImage: 'src="images/Snapshoot4.png" alt="mobile-project3"',
-    desktopImage: 'src="images/bgdesktop4.svg" alt="Desktop-project3"',
+    mobileImage: 'src="assets/Portfolio3.png" alt="mobile-project3"',
+    desktopImage: 'src="assets/desktop/Portfolio3.png" alt="Desktop-project3"',
     name: 'Facebook 360',
     jobDescription: {
       company: 'FACEBOOK',
@@ -56,8 +57,8 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
   },
   {
-    mobileImage: 'src="images/Snapshoot5.png" alt="mobile-project4"',
-    desktopImage: 'src="images/bgdesktop5.svg" alt="Desktop-project4"',
+    mobileImage: 'src="assets/Portfolio4.png" alt="mobile-project4"',
+    desktopImage: 'src="assets/desktop/Portfolio4.png" alt="Desktop-project4"',
     name: 'Multi-Post Stories',
     jobDescription: {
       company: 'Uber',
@@ -71,10 +72,10 @@ const projects = [
 const portfolios = document.querySelector('#Portfolio');
 projects.forEach((project, id) => {
   const innerProject = document.createElement('div');
-  innerProject.classList.add('containerr');
+  innerProject.classList.add('container');
   innerProject.innerHTML = (`
     <img class="projetc-image" ${project.mobileImage}>
-    <img class="dprojectimage" ${project.desktopImage}>
+    <img class="Dprojetc-image" ${project.desktopImage}>
     <div class="details project${id}">
       <h2 class="Project-Title">${project.name}</h2>
       <article class="experience">
@@ -101,14 +102,14 @@ function projectPopup(position) {
              ${projects[position].name}
           </h2>
           <i class="close-icon bi bi-x-lg "></i>
-          <img class="project-img" src="images/Portfolio${position + 1}.png" alt="">
+          <img class="project-img" src="assets/Portfolio${position + 1}.png" alt="">
 
           <ul class="info-top">
             <li class="title">${projects[position].jobDescription.company}&nbsp;&nbsp; &#8226; &nbsp;</li>
             <li class="year gray">${projects[position].jobDescription.role}&nbsp;&nbsp; &#8226; &nbsp;</li>
             <li class="year gray">${projects[position].jobDescription.year}</li>
           </ul>
-          <img class="desktop-img" src="images/Portfolio${position + 1}.png" alt="project tonic homepage test">
+          <img class="desktop-img" src="assets/desktop/Portfolio${position + 1}.png" alt="project tonic homepage">
           <div class="popup-bottom">
             <p class="project-text">
               ${projects[position].description}
@@ -141,3 +142,54 @@ function projectPopup(position) {
   portfolios.appendChild(popup);
 }
 
+const projectnBtn = document.querySelectorAll('.see-project');
+projectnBtn.forEach((btn, ind) => {
+  btn.addEventListener('click', () => {
+    projectPopup(ind);
+    const popup = document.querySelector('.popup');
+    document.querySelector('.close-icon').addEventListener('click', () => {
+      portfolios.removeChild(popup);
+    });
+  });
+});
+
+// form validation
+const form = document.querySelector('.forms');
+const email = document.querySelector('.form-email');
+const errorMsg = document.querySelector('.error');
+
+form.addEventListener('submit', (event) => {
+  let errorMessage = '';
+  const emailLower = email.value.toLowerCase();
+  if (emailLower !== email.value) {
+    errorMessage = 'The email you insert have to be in Lowercase';
+  }
+  if (errorMessage.length > 0) {
+    event.preventDefault();
+    errorMsg.innerText = errorMessage;
+  }
+});
+
+// local storage
+const formData = {
+  name: document.querySelector('.form-name').value,
+  email: document.querySelector('.form-email').value,
+  message: document.querySelector('.form-message').value,
+};
+
+let getFormData = window.localStorage.getItem('formData');
+if (getFormData) {
+  getFormData = JSON.parse(getFormData);
+  document.querySelector('.form-name').value = getFormData.name;
+  document.querySelector('.form-email').value = getFormData.email;
+  document.querySelector('.form-message').value = getFormData.message;
+}
+
+Array.from(form).forEach((element) => {
+  element.addEventListener('input', () => {
+    formData.name = document.querySelector('.form-name').value;
+    formData.email = document.querySelector('.form-email').value;
+    formData.message = document.querySelector('.form-message').value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});

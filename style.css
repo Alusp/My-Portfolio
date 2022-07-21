@@ -315,15 +315,7 @@ ul {
   font-weight: 600px;
   color: #344563;
 }
-
-.canopy-image {
-  background-image: url("images/Counter.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 10px;
-  width: 10px;
-  margin-left: auto;
-}
+ 
 
 .back-end-image {
   background-image: url("images/Counter.svg");
@@ -334,31 +326,6 @@ ul {
   margin-left: auto;
 }
 
-.card-content p {
-  line-height: 24px;
-  font-size: 15px;
-  font-weight: 400;
-  margin: 20px 0 12px;
-  color: #344563;
-}
-
-.second-links ul {
-  display: flex;
-  margin-bottom: 1rem;
-  justify-content: flex-start;
-  padding: 0 50px 0 2px;
-  list-style: none;
-  gap: 0.5rem;
-}
-
-.second-links ul li a {
-  padding: 0.2em 0.6em;
-  border-radius: 10px;
-  text-decoration: none;
-  border: none;
-  background-color: #ebebff;
-  color: #6070ff;
-}
 
 .popup {
   position: fixed;

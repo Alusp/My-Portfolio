@@ -226,16 +226,6 @@ ul {
   color: #344563;
 }
 
-.conect h4 {
-  max-width: 150px;
-  height: 24px;
-  font-weight: 600;
-  line-height: 24px;
-  size: 24px;
-  color: #7f8cff;
-  margin-top: 5em;
-}
-
 .icons ul {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -291,32 +281,6 @@ ul {
   color: #fff;
 }
 
-.first-links {
-  display: flex;
-  font-size: 13px;
-  font-weight: 600px;
-  line-height: 16px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em;
-  gap: 0.9rem;
-  list-style: none;
-}
-
-.canopy-style {
-  color: #344563;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.first-links ul li a {
-  text-decoration: none;
-  font-weight: 600px;
-  color: #344563;
-}
- 
-
 .back-end-image {
   background-image: url("images/Counter.svg");
   background-size: contain;
@@ -326,6 +290,31 @@ ul {
   margin-left: auto;
 }
 
+.card-content p {
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0 12px;
+  color: #344563;
+}
+
+.second-links ul {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  padding: 0 50px 0 2px;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.second-links ul li a {
+  padding: 0.2em 0.6em;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  background-color: #ebebff;
+  color: #6070ff;
+}
 
 .popup {
   position: fixed;
@@ -384,15 +373,6 @@ ul {
 .get-resume a:active {
   background-color: #2230d2;
   color: #fff;
-}
-
-.mt-post {
-  width: 300px;
-  height: 80px;
-  font-weight: 800;
-  font-size: 32;
-  line-height: 44px;
-  color: #172b4d;
 }
 
 .second-section {
@@ -871,7 +851,7 @@ nav .menu-open li {
   font-size: 32px;
   position: fixed;
   right: 20px;
-  top: 20;
+  top: 20px;
 }
 
 .items li img {
@@ -901,6 +881,10 @@ nav .menu-open li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .close i {
+    display: none;
   }
 
   nav .menu {
@@ -964,12 +948,14 @@ nav .menu-open li {
   }
 
   .popup {
-    width: 100%;
-    padding: 80px 140px;
+    width: 1156px;
+    height: 800px;
+    padding: 20px 140px;
   }
 
   .popup-content {
-    padding: 24px;
+    padding: 12px;
+    height: 650px;
   }
 
   .popup-content > .project-text {
@@ -1265,9 +1251,11 @@ nav .menu-open li {
   }
 
   .desktop-img {
-    display: initial;
-    width: 100%;
-    margin-bottom: 60px;
+    display: flex;
+    position: relative;
+    width: 830px;
+    height: 350px;
+    margin-bottom: 40px;
   }
 
   #my-info {

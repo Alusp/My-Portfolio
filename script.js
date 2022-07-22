@@ -184,12 +184,11 @@ const validateEmail = (email) => {
 };
 
 contactForm.addEventListener('submit', (e) => {
-  const EMAIL_INVALID = ' Email should be all lower case only.';
-  const displayMsg = document.getElementById('display-msg');
+  
   e.preventDefault();
   if (!validateEmail(contactForm.elements.email.value.trim())) {
-    displayMsg.innerText = EMAIL_INVALID;
-    displayMsg.style.color = '#ff0000';
+     
+      alert("Email should be all lower case only");
   } else {
     displayMsg.innerText = '';
     contactForm.submit();

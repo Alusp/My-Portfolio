@@ -1,20 +1,22 @@
 /* eslint-disable linebreak-style */
-const openMenu = document.querySelector('.menu');
+const openMenu = document.querySelector(".menu");
 
-const navItem = document.querySelectorAll('.item');
-const menuCont = document.querySelector('.menu-items');
-const closeMenu = document.querySelector('.close');
+const navItem = document.querySelectorAll(".item");
+const menuCont = document.querySelector(".menu-items");
+const closeMenu = document.querySelector(".close");
+const contactForm = document.getElementById("contact-me-form");
+
 function openMobMenu() {
-  menuCont.classList.add('menu-open');
+  menuCont.classList.add("menu-open");
 }
-openMenu.addEventListener('click', openMobMenu);
+openMenu.addEventListener("click", openMobMenu);
 function closeMobMenu() {
-  menuCont.classList.remove('menu-open');
+  menuCont.classList.remove("menu-open");
 }
-closeMenu.addEventListener('click', closeMobMenu);
+closeMenu.addEventListener("click", closeMobMenu);
 
 navItem.forEach((menuItem) => {
-  menuItem.addEventListener('click', closeMobMenu);
+  menuItem.addEventListener("click", closeMobMenu);
 });
 
 // Project pop up section
@@ -22,68 +24,68 @@ const projects = [
   {
     mobileImage: 'src="images/Snapshoot1.png" alt="mobile-project1"',
     desktopImage: 'src="images/bgdesktop2.svg" alt="Desktop-project1"',
-    name: 'Tonic',
+    name: "Tonic",
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: "CANOPY",
+      role: "Back End Dev",
+      year: "2015",
     },
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://alusp.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Alusp/My-Portfolio',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    languages: ["html", "css", "javascript"],
+    liveLink: "https://alusp.github.io/My-Portfolio/",
+    sourceCode: "https://github.com/Alusp/My-Portfolio",
   },
   {
     mobileImage: 'src="images/Snapshoot3.png" alt="mobile-project2"',
     desktopImage: 'src="images/bgdesktop3.svg" alt="Desktop-project2"',
-    name: 'Multi-Post Stories',
+    name: "Multi-Post Stories",
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: "FACEBOOK",
+      role: "FullStack Dev",
+      year: "2015",
     },
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://alusp.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Alusp/My-Portfolio',
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    languages: ["html", "css", "javascript"],
+    liveLink: "https://alusp.github.io/My-Portfolio/",
+    sourceCode: "https://github.com/Alusp/My-Portfolio",
   },
   {
     mobileImage: 'src="images/Snapshoot4.png" alt="mobile-project3"',
     desktopImage: 'src="images/bgdesktop4.svg" alt="Desktop-project3"',
-    name: 'Facebook 360',
+    name: "Facebook 360",
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: "FACEBOOK",
+      role: "FullStack Dev",
+      year: "2015",
     },
     description:
-      'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://alusp.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Alusp/My-Portfolio',
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    languages: ["html", "css", "javascript"],
+    liveLink: "https://alusp.github.io/My-Portfolio/",
+    sourceCode: "https://github.com/Alusp/My-Portfolio",
   },
   {
     mobileImage: 'src="images/Snapshoot5.png" alt="mobile-project4"',
     desktopImage: 'src="images/bgdesktop5.svg" alt="Desktop-project4"',
-    name: 'Multi-Post Stories',
+    name: "Multi-Post Stories",
     jobDescription: {
-      company: 'Uber',
-      role: 'Lead Developer',
-      year: '2018',
+      company: "Uber",
+      role: "Lead Developer",
+      year: "2018",
     },
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://alusp.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Alusp/My-Portfolio',
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    languages: ["html", "css", "javascript"],
+    liveLink: "https://alusp.github.io/My-Portfolio/",
+    sourceCode: "https://github.com/Alusp/My-Portfolio",
   },
 ];
-const portfolios = document.querySelector('#Portfolio');
+const portfolios = document.querySelector("#Portfolio");
 projects.forEach((project, id) => {
-  const innerProject = document.createElement('div');
-  innerProject.classList.add('containerr');
+  const innerProject = document.createElement("div");
+  innerProject.classList.add("containerr");
   innerProject.innerHTML = `
     <img class="projetc-image" ${project.mobileImage}>
     <img class="dprojectimage" ${project.desktopImage}>
@@ -106,7 +108,7 @@ projects.forEach((project, id) => {
 });
 
 function projectPopup(position) {
-  const popup = document.createElement('div');
+  const popup = document.createElement("div");
   popup.innerHTML = `
       <div class="popup-content">
           <h2 class="Project-Title">
@@ -114,21 +116,21 @@ function projectPopup(position) {
           </h2>
           <i class="close-icon bi bi-x-lg "></i>
           <img class="project-img" src="images/Portfolio${
-  position + 1
-}.png" alt="">
+            position + 1
+          }.png" alt="">
 
           <ul class="info-top">
             <li class="title">${
-  projects[position].jobDescription.company
-}&nbsp;&nbsp; &#8226; &nbsp;</li>
+              projects[position].jobDescription.company
+            }&nbsp;&nbsp; &#8226; &nbsp;</li>
             <li class="year gray">${
-  projects[position].jobDescription.role
-}&nbsp;&nbsp; &#8226; &nbsp;</li>
+              projects[position].jobDescription.role
+            }&nbsp;&nbsp; &#8226; &nbsp;</li>
             <li class="year gray">${projects[position].jobDescription.year}</li>
           </ul>
           <img class="desktop-img" src="images/Portfolio${
-  position + 1
-}.png" alt="project tonic homepage test">
+            position + 1
+          }.png" alt="project tonic homepage test">
           <div class="popup-bottom">
             <p class="project-text">
               ${projects[position].description}
@@ -142,16 +144,16 @@ function projectPopup(position) {
               <div class="popup-buttons">
                 <button type="button" class="btn project-button">
                         <a class="btn-live"href="${
-  projects[position].liveLink
-}">
+                          projects[position].liveLink
+                        }">
                           See live &nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-box-arrow-up-right"></i>
                         </a>
                 </button>
                 <button type="button" class="btn project-button">
                         <a class="btn-live"href="${
-  projects[position].sourceCode
-}">
+                          projects[position].sourceCode
+                        }">
                           See Source&nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-github"></i>
                         </a>
@@ -161,16 +163,35 @@ function projectPopup(position) {
           </div>
         </div>
     `;
-  popup.classList.add('popup');
+  popup.classList.add("popup");
   portfolios.appendChild(popup);
 }
-const projectnBtn = document.querySelectorAll('.see-project');
+const projectnBtn = document.querySelectorAll(".see-project");
 projectnBtn.forEach((btn, ind) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener("click", () => {
     projectPopup(ind);
-    const popup = document.querySelector('.popup');
-    document.querySelector('.close-icon').addEventListener('click', () => {
+    const popup = document.querySelector(".popup");
+    document.querySelector(".close-icon").addEventListener("click", () => {
       portfolios.removeChild(popup);
     });
   });
+});
+
+//######################## Contact Form Validation Section #######################
+const validateEmail = (email) => {
+  if (email !== email.toLowerCase()) return false;
+  return true;
+};
+
+contactForm.addEventListener("submit", (e) => {
+  const EMAIL_INVALID = " Email should be all lower case only.";
+  const displayMsg = document.getElementById("display-msg");
+  e.preventDefault();
+  if (!validateEmail(contactForm.elements.email.value.trim())) {
+    displayMsg.innerText = EMAIL_INVALID;
+    displayMsg.style.color = "#ff0000";
+  } else {
+    displayMsg.innerText = "";
+    contactForm.submit();
+  }
 });

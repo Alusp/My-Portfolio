@@ -5,7 +5,7 @@ body {
 }
 
 button:hover {
-  background-color: gry;
+  background-color: gray;
 }
 
 * {
@@ -765,7 +765,6 @@ ul {
   height: 170px;
   border-radius: 8px;
   padding: 10px;
-
 }
 
 .submission {
@@ -803,7 +802,6 @@ ul {
   box-shadow: calc(0px + 0px) 8px 16px rgb(64 83 252 / 24%);
   border-color: #c1c7d0;
 } */
-
 
 .submission :active:enabled {
   background: #2230d2;
@@ -906,7 +904,6 @@ nav .menu-open li {
     height: 170px;
     border-radius: 8px;
     margin-bottom: 40px;
-
   }
 
   nav .menu-items {

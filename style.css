@@ -5,7 +5,7 @@ body {
 }
 
 button:hover {
-  background-color: #6070ff;
+  background-color: gray;
 }
 
 * {
@@ -226,16 +226,6 @@ ul {
   color: #344563;
 }
 
-.conect h4 {
-  max-width: 150px;
-  height: 24px;
-  font-weight: 600;
-  line-height: 24px;
-  size: 24px;
-  color: #7f8cff;
-  margin-top: 5em;
-}
-
 .icons ul {
   margin-top: 1em;
   margin-bottom: 4em;
@@ -289,40 +279,6 @@ ul {
   font-weight: bold;
   line-height: 44px;
   color: #fff;
-}
-
-.first-links {
-  display: flex;
-  font-size: 13px;
-  font-weight: 600px;
-  line-height: 16px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em;
-  gap: 0.9rem;
-  list-style: none;
-}
-
-.canopy-style {
-  color: #344563;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.first-links ul li a {
-  text-decoration: none;
-  font-weight: 600px;
-  color: #344563;
-}
-
-.canopy-image {
-  background-image: url("images/Counter.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 10px;
-  width: 10px;
-  margin-left: auto;
 }
 
 .back-end-image {
@@ -417,15 +373,6 @@ ul {
 .get-resume a:active {
   background-color: #2230d2;
   color: #fff;
-}
-
-.mt-post {
-  width: 300px;
-  height: 80px;
-  font-weight: 800;
-  font-size: 32;
-  line-height: 44px;
-  color: #172b4d;
 }
 
 .second-section {
@@ -670,6 +617,13 @@ ul {
   padding-top: 25px;
 }
 
+#display-msg {
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
 .popup-buttons > .project-button {
   display: flex;
   align-items: center;
@@ -810,15 +764,15 @@ ul {
   width: 327px;
   height: 170px;
   border-radius: 8px;
-  margin-top: 10px;
+  padding: 10px;
 }
 
 .submission {
   font-family: inherit;
   display: flex;
-  margin-top: -30px;
+  padding: 12px;
   margin-left: 25px;
-  padding-top: 12px;
+  margin-top: 20px;
   margin-bottom: 30px;
   justify-content: center;
   justify-items: center;
@@ -846,6 +800,7 @@ ul {
   background: #6070ff;
   color: white;
   box-shadow: calc(0px + 0px) 8px 16px rgb(64 83 252 / 24%);
+  border-color: #c1c7d0;
 }
 
 .submission :active:enabled {
@@ -869,10 +824,6 @@ textarea::placeholder {
 .contactme-body:hover {
   transform: translate(-10px, 0);
 }
-
-/* .error {
-  color: #fff;
-} */
 
 .shapes {
   margin-top: 21px;
@@ -904,7 +855,7 @@ nav .menu-open li {
   font-size: 32px;
   position: fixed;
   right: 20px;
-  top: 20;
+  top: 20px;
 }
 
 .items li img {
@@ -936,8 +887,18 @@ nav .menu-open li {
     align-items: center;
   }
 
+  .close i {
+    display: none;
+  }
+
   nav .menu {
     display: none;
+  }
+
+  .form-message {
+    width: 327px;
+    height: 170px;
+    border-radius: 8px;
   }
 
   nav .menu-items {
@@ -997,12 +958,25 @@ nav .menu-open li {
   }
 
   .popup {
-    width: 100%;
-    padding: 80px 140px;
+    width: 1440px;
+    height: 800px;
+    padding: 20px 140px;
+    background: rgb(193 199 208 / 50%);
+    backdrop-filter: blur(3px);
   }
 
   .popup-content {
-    padding: 24px;
+    margin-left: 250px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 650px;
+    height: 650px;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
   }
 
   .popup-content > .project-text {
@@ -1123,10 +1097,6 @@ nav .menu-open li {
 
   .mt-post {
     width: 496px;
-  }
-
-  .text1 {
-    /* background-color: #000; */
   }
 
   .card-2-image {
@@ -1262,6 +1232,7 @@ nav .menu-open li {
   .submission {
     display: flex;
     padding-top: 12px;
+    margin-top: 20px;
     margin-bottom: 30px;
     justify-content: center;
     justify-items: center;
@@ -1298,9 +1269,11 @@ nav .menu-open li {
   }
 
   .desktop-img {
-    display: initial;
-    width: 100%;
-    margin-bottom: 60px;
+    display: flex;
+    position: relative;
+    width: 620px;
+    height: 380px;
+    margin-bottom: 40px;
   }
 
   #my-info {
@@ -1309,5 +1282,22 @@ nav .menu-open li {
 
   nav .menu-items li {
     display: flex;
+  }
+
+  /* form validation */
+  #contact-me-form {
+    display: inherit;
+    flex-direction: column;
+    width: 327px;
+    height: 102px;
+    margin: 80px 0;
+  }
+
+  #display-msg {
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 150px;
   }
 }

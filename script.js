@@ -185,7 +185,7 @@ const validateEmail = (email) => {
 
 contactForm.addEventListener('submit', (e) => {
   const EMAIL_INVALID = 'Email should be in lower case only.';
-  const displayMsg = document.getElementById('display-msg');
+  const displayMsg = document.getElementById('isplay-msg');
   e.preventDefault();
   if (!validateEmail(contactForm.elements.email.value.trim())) {
     displayMsg.innerText = EMAIL_INVALID;

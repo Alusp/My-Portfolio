@@ -216,7 +216,8 @@ Array.from(form).forEach((element) => {
     formData.name = document.querySelector('.form-name').value;
     formData.email = document.querySelector('.form-email').value;
     formData.message = document.querySelector('.form-message').value;
-    
+    localStorage.setItem('formData', JSON.stringify(formData));
+
   });
 });
 

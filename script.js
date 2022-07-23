@@ -178,6 +178,7 @@ projectnBtn.forEach((btn, ind) => {
 });
 
 // ######################## Contact Form Validation Section #######################
+const form = document.querySelector('.forms');
 const validateEmail = (email) => {
   if (email !== email.toLowerCase()) return false;
   return true;

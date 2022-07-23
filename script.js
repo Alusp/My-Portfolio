@@ -195,3 +195,28 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.submit();
   }
 });
+
+// ############################# Browser Data Storage ###################################
+const formData = {
+  name: document.querySelector('.form-name').value,
+  email: document.querySelector('.form-email').value,
+  message: document.querySelector('.form-message').value,
+};
+
+let getFormData = window.localStorage.getItem('formData');
+if (getFormData) {
+  getFormData = JSON.parse(getFormData);
+  document.querySelector('.form-name').value = getFormData.name;
+  document.querySelector('.form-email').value = getFormData.email;
+  document.querySelector('.form-message').value = getFormData.message;
+}
+
+Array.from(form).forEach((element) => {
+  element.addEventListener('input', () => {
+    formData.name = document.querySelector('.form-name').value;
+    formData.email = document.querySelector('.form-email').value;
+    formData.message = document.querySelector('.form-message').value;
+    
+  });
+});
+

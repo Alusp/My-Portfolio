@@ -949,7 +949,7 @@ nav .menu-open li {
     display: flex;
     max-width: 544px;
     min-width: 300px;
-    max-height: 448px;
+    height: 448px;
     min-height: 250px;
   }
 

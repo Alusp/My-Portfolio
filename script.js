@@ -31,7 +31,7 @@ const projects = [
       year: '2022',
     },
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'The Seventy-fifth World Health Assembly is the decision-making body of WHO. It is attended by delegations from all WHO member states on a specific health agenda.',
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/World-Health-Assembly/',
     sourceCode: 'https://github.com/Alusp/World-Health-Assembly',
@@ -46,7 +46,7 @@ const projects = [
       year: '2022',
     },
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'Awesome Book is a simple web project that displays a user\'s book library and allows the user to add and remove books from the library.',
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/AwsomebookWithES6/',
     sourceCode: 'https://github.com/Alusp/AwsomebookWithES6',
@@ -61,25 +61,25 @@ const projects = [
       year: '2022',
     },
     description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      "TODO-LIST is a project that is base on the ability to create a list of things you want to do throughout the day. with add Remove Feature with Interactive list.",
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/ToDolist/?',
     sourceCode: 'https://github.com/Alusp/ToDolist',
   },
   {
-    mobileImage: 'src="images/Snapshoot5.png" alt="mobile-project4"',
-    desktopImage: 'src="images/bgdesktop5.svg" alt="Desktop-project4"',
-    name: 'Multi-Post Stories',
+    mobileImage: 'src="images/bgdesktop5.png" alt="mobile-project4"',
+    desktopImage: 'src="images/bgdesktop5.png" alt="Desktop-project4"',
+    name: 'Meals Restaurant',
     jobDescription: {
-      company: 'Uber',
-      role: 'Lead Developer',
-      year: '2018',
+      company: 'Microverse',
+      role: 'Software Developer',
+      year: '2022',
     },
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'A Single Page Application which shows the meals from MealsDB API and used the Involvement API to record the comments and Likes for each meal.',
     languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://alusp.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Alusp/My-Portfolio',
+    liveLink: 'https://alusp.github.io/meals-capstone-project/',
+    sourceCode: 'https://github.com/Alusp/meals-capstone-project',
   },
 ];
 const portfolios = document.querySelector('#Portfolio');

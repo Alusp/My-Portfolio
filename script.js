@@ -61,7 +61,7 @@ const projects = [
       year: '2022',
     },
     description:
-      "TODO-LIST is a project that is base on the ability to create a list of things you want to do throughout the day. with add Remove Feature with Interactive list.",
+      'TODO-LIST is a project that is base on the ability to create a list of things you want to do throughout the day. with add Remove Feature with Interactive list.',
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/ToDolist/?',
     sourceCode: 'https://github.com/Alusp/ToDolist',

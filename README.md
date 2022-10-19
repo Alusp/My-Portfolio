@@ -4,6 +4,8 @@
 
 This project contains My Portfolio for responsive mobile and desktop version.It shows you everything about me and the services I can provide.
 
+[Live Demo](https://alusp.github.io/My-Portfolio/)
+
 ## Built With
 
 - HTML and CSS
@@ -33,7 +35,6 @@ Navigate through the web page to find the information you need. Use the links in
   Project reside in this Repo and is hosted on Github pages. You can clone the repo or download the files manually to your local machine.
   below is the online link for this website:
 
-- GITHUB PAGES: [@alusine-portfolio](https://alusp.github.io/My-Portfolio/)
 
 ## Authors
 

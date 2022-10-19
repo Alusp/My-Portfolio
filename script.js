@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 const openMenu = document.querySelector('.menu');
-
 const navItem = document.querySelectorAll('.item');
 const menuCont = document.querySelector('.menu-items');
 const closeMenu = document.querySelector('.close');
@@ -87,8 +86,8 @@ projects.forEach((project, id) => {
   const innerProject = document.createElement('div');
   innerProject.classList.add('containerr');
   innerProject.innerHTML = `
-    <img class="projetc-image" ${project.mobileImage}>
-    <img class="dprojectimage" ${project.desktopImage}>
+    <img class="projetc-image" ${project.mobileImage} alt="mobile image">
+    <img class="dprojectimage" ${project.desktopImage} alt="desktop image">
     <div class="details project${id}">
       <h2 class="Project-Title">${project.name}</h2>
       <article class="experience">
@@ -115,9 +114,7 @@ function projectPopup(position) {
              ${projects[position].name}
           </h2>
           <i class="close-icon bi bi-x-lg "></i>
-          <img class="project-img" src="images/Portfolio${
-  position + 1
-}.png" alt="">
+          <img class="project-img" src="images/Portfolio${position + 1}.png"alt="projectimage">
 
           <ul class="info-top">
             <li class="title">${
@@ -143,17 +140,13 @@ function projectPopup(position) {
               </ul>
               <div class="popup-buttons">
                 <button type="button" class="btn project-button">
-                        <a class="btn-live"href="${
-  projects[position].liveLink
-}">
+                        <a class="btn-live"href="${projects[position].liveLink}">
                           See live &nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-box-arrow-up-right"></i>
                         </a>
                 </button>
                 <button type="button" class="btn project-button">
-                        <a class="btn-live"href="${
-  projects[position].sourceCode
-}">
+                        <a class="btn-live"href="${projects[position].sourceCode}">
                           See Source&nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-github"></i>
                         </a>

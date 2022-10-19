@@ -1,5 +1,14 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins&display=swap%22";
 
+:root {
+  --primary-color: #6070ff;
+  --color-white: #fff;
+  --light-gray: #ebebff;
+  --dark-gray: rgb(193 199 208 / 50%);
+  --bg-color: #f7f7f9;
+  --grayish-blue: #7f8cff;
+}
+
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   overflow-x: hidden;
@@ -22,8 +31,9 @@ a {
 header {
   width: inherit;
   height: 50px;
+  margin-top: 1rem;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +44,7 @@ header a {
 }
 
 header a h1 {
-  color: #6070ff;
+  color: var(--primary-color);
   font-size: 26px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -60,7 +70,7 @@ header a h1 {
 
 nav .menu {
   width: 30px;
-  color: #6070ff;
+  color: var(--primary-color);
 }
 
 li {
@@ -70,9 +80,9 @@ li {
 .stacks > li {
   padding: 0 10px;
   margin: 5px;
-  background-color: #ebebff;
+  background-color: var(--light-gray);
   border-radius: 5px;
-  color: #6070ff;
+  color: var(--primary-color);
   height: 20px;
 }
 
@@ -91,7 +101,7 @@ nav .menu-items li {
 }
 
 .btn {
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: 8px;
   border: 1px solid#396df2;
   padding: 10px;
@@ -103,7 +113,7 @@ nav .menu-items li {
 
 nav > i,
 .btnicon {
-  color: #6070ff;
+  color: var(--primary-color);
 }
 
 nav > i {
@@ -132,19 +142,19 @@ i:hover {
 }
 
 .btn-live {
-  color: #6070ff;
+  color: var(--primary-color);
 }
 
 .error {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .btn-live:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .btnicon:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .dprojectimage {
@@ -240,7 +250,7 @@ ul {
 }
 
 .work {
-  background-color: #f7f7f9;
+  background-color: var(--bg-color);
   margin: 50px 0;
   align-items: center;
   display: flex;
@@ -252,7 +262,7 @@ ul {
   padding: 16px;
   border: 1px solid rgb(219 215 215);
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .containerr > img {
@@ -280,7 +290,7 @@ ul {
   font-size: 32px;
   font-weight: bold;
   line-height: 44px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .back-end-image {
@@ -314,8 +324,8 @@ ul {
   border-radius: 10px;
   text-decoration: none;
   border: none;
-  background-color: #ebebff;
-  color: #6070ff;
+  background-color: var(--light-gray);
+  color: var(--primary-color);
 }
 
 .popup {
@@ -324,7 +334,7 @@ ul {
   bottom: 0;
   max-height: 100vh;
   overflow: auto;
-  background: rgb(193 199 208 / 50%);
+  background: var(--dark-gray);
   backdrop-filter: blur(3px);
   padding: 50px 16px;
   box-sizing: border-box;
@@ -336,7 +346,7 @@ ul {
 }
 
 .popup-content {
-  background-color: white;
+  background-color: var(--color-white);
   box-sizing: border-box;
   padding: 20px 16px;
   position: relative;
@@ -368,13 +378,13 @@ ul {
 }
 
 .get-resume a:hover {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--color-white);
 }
 
 .get-resume a:active {
   background-color: #2230d2;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .second-section {
@@ -424,7 +434,7 @@ ul {
   align-items: center;
   gap: 1rem;
   flex: 1;
-  background: #f7f7f9;
+  background: var(--bg-color);
   border-radius: 8px;
 }
 
@@ -440,7 +450,7 @@ ul {
 
 .border-bottom {
   border-bottom: 1px solid rgb(99 98 98 / 30%);
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .about-me {
@@ -481,7 +491,7 @@ ul {
   width: 375px;
   height: 1263px;
   text-align: center;
-  border: 1px solid rgb(221 217 217);
+  border: 1px solid var(--color-white);
   border-top-right-radius: 40px;
 }
 
@@ -520,13 +530,13 @@ ul {
 
 #section-5 .resume a:hover {
   background: #738bca;
-  color: #fff;
+  color: var(--color-white);
   border: none;
 }
 
 #section-5 .resume a:active {
   background: #396df2;
-  color: #fff;
+  color: var(--color-white);
   border: none;
 }
 
@@ -584,7 +594,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: var(--grayish-blue);
   padding-left: 0;
   margin-top: 0;
   padding-top: 0;
@@ -636,8 +646,8 @@ ul {
 }
 
 .language {
-  background-color: #ebebff;
-  color: #6070ff;
+  background-color: var(--light-gray);
+  color: var(--primary-color);
   margin-right: 8px;
   font-weight: 500;
   font-size: 12px;
@@ -685,7 +695,7 @@ ul {
 }
 
 .list-item {
-  background: #f7f7f9;
+  background: var(--bg-color);
   border-radius: 8px;
   font-weight: 500;
   font-size: 15px;
@@ -714,7 +724,7 @@ ul {
 .contactt {
   max-width: 375px;
   max-height: 800px;
-  background: #6070ff url("images/contacts.png") no-repeat right top;
+  background: var(--primary-color) url("images/contacts.png") no-repeat right top;
   background-size: 57.8%;
   border-top-left-radius: 8rem;
   display: flex;
@@ -735,7 +745,7 @@ ul {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 12px;
   text-align: center;
 }
@@ -747,7 +757,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;
+  color: var(--light-gray);
   padding-bottom: 20px;
   text-align: center;
   display: flex;
@@ -779,8 +789,8 @@ ul {
   justify-content: center;
   justify-items: center;
   align-self: flex-start;
-  border: 1px solid #6070ff;
-  background-color: white;
+  border: 1px solid var(--primary-color);
+  background-color: var(--color-white);
   border-radius: 8px;
   width: 140px;
   height: 48px;
@@ -799,15 +809,15 @@ ul {
 }
 
 .submission :hover:enabled {
-  background: #6070ff;
-  color: white;
+  background: var(--primary-color);
+  color: var(--color-white);
   box-shadow: calc(0px + 0px) 8px 16px rgb(64 83 252 / 24%);
   border-color: #c1c7d0;
 }
 
 .submission :active:enabled {
   background: #2230d2;
-  color: white;
+  color: var(--color-white);
 }
 
 input::placeholder,
@@ -838,7 +848,7 @@ textarea::placeholder {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background-color: #6070ff;
+  background-color: var(--primary-color);
   top: 0;
   left: 0;
   padding: 40px;
@@ -853,7 +863,7 @@ nav .menu-open li {
 
 .close i {
   display: block;
-  color: #fff;
+  color: var(--color-white);
   font-size: 32px;
   position: fixed;
   right: 20px;
@@ -871,7 +881,7 @@ nav .menu-open li {
 .item {
   width: 80%;
   padding-bottom: 8px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .close {
@@ -883,7 +893,7 @@ nav .menu-open li {
     width: 100%;
     height: 50px;
     padding: 1.5rem;
-    background-color: #fff;
+    background-color: var(--color-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -963,7 +973,7 @@ nav .menu-open li {
     width: 1440px;
     height: 800px;
     padding: 20px 140px;
-    background: rgb(193 199 208 / 50%);
+    background: var(--dark-gray);
     backdrop-filter: blur(3px);
   }
 
@@ -975,7 +985,7 @@ nav .menu-open li {
     justify-items: center;
     width: 650px;
     height: 650px;
-    background: #fff;
+    background: var(--color-white);
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
@@ -1039,7 +1049,7 @@ nav .menu-open li {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: var(--grayish-blue);
     margin-top: 20px;
     padding-top: 1rem;
   }
@@ -1143,7 +1153,7 @@ nav .menu-open li {
   .list-item {
     width: 122px;
     height: 120px;
-    background-color: #f7f7f9;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1197,7 +1207,7 @@ nav .menu-open li {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    color: #7f8cff;
+    color: var(--grayish-blue);
     display: flex;
     margin-left: 20px;
   }
@@ -1222,7 +1232,7 @@ nav .menu-open li {
     min-width: 1440px;
     height: 846px;
     margin-top: -250px;
-    background: #6070ff url("images/bgcontactform.svg") no-repeat;
+    background: var(--primary-color) url("images/bgcontactform.svg") no-repeat;
     background-position: center;
     background-size: contain;
     border-top-left-radius: 8rem;
@@ -1239,8 +1249,8 @@ nav .menu-open li {
     justify-content: center;
     justify-items: center;
     align-self: center;
-    border: 1px solid #6070ff;
-    background-color: white;
+    border: 1px solid var(--primary-color);
+    background-color: var(--color-white);
     border-radius: 8px;
     width: 140px;
     height: 48px;

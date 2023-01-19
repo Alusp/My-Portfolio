@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portfolio
 
 This project contains My Portfolio for responsive mobile and desktop version.It shows you everything about me and the services I can provide.
 

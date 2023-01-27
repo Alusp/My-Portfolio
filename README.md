@@ -6,7 +6,7 @@ This project contains My Portfolio for responsive mobile and desktop version.It 
 
 ## 🚀 Live Demo
 
-[Here](https://alusine-portfolio.netlify.app/)
+[Here](https://alusp.github.io/My-Portfolio/)
 
 ## Built With
 

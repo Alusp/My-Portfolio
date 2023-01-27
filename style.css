@@ -31,8 +31,8 @@ a {
 header {
   width: inherit;
   height: 50px;
-  margin-top: 1rem;
-  padding: 1.5rem;
+  position: fixed;
+  top: 0;
   background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
@@ -41,6 +41,8 @@ header {
 
 header a {
   text-decoration: none;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 header a h1 {
@@ -88,6 +90,8 @@ li {
 
 nav .menu-items li {
   display: none;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .container {

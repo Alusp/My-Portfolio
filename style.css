@@ -9,6 +9,10 @@
   --grayish-blue: #7f8cff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   overflow-x: hidden;

@@ -260,6 +260,7 @@ ul {
 .work {
   background-color: var(--bg-color);
   margin: 50px 0;
+  padding-top: 10px;
   align-items: center;
   display: flex;
   flex-direction: column;

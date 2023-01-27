@@ -60,7 +60,7 @@ const projects = [
       year: '2022',
     },
     description:
-      'TODO-LIST is a project that is base on the ability to create a list of things you want to do throughout the day. with add Remove Feature with Interactive list.',
+      'TODO-LIST is a project that is based on the ability to create a list of things you want to do throughout the day. It has an add Remove Feature with Interactive list.',
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/ToDolist/?',
     sourceCode: 'https://github.com/Alusp/ToDolist',
@@ -75,7 +75,7 @@ const projects = [
       year: '2022',
     },
     description:
-      'A Single Page Application which shows the meals from MealsDB API and used the Involvement API to record the comments and Likes for each meal.',
+      'A Single Page Application which shows the meals from MealsDB API and uses the Involvement API to record the comments and Likes for each meal.',
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/meals-capstone-project/',
     sourceCode: 'https://github.com/Alusp/meals-capstone-project',

@@ -252,7 +252,7 @@ ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  max-width: 200px;
+  max-width: 120px;
   padding-left: 0;
   align-items: center;
 }

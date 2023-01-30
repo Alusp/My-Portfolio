@@ -4,9 +4,6 @@
 
 This project contains My Portfolio for responsive mobile and desktop version.It shows you everything about me and the services I can provide.
 
-![Space Hub](https://user-images.githubusercontent.com/43528594/215571576-7402e8cf-481f-49b0-a303-75920558dad8.png)
-
-
 ## 🚀 Live Demo
 
 [Here](https://alusp.github.io/My-Portfolio/)

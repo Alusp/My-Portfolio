@@ -140,13 +140,13 @@ function projectPopup(position) {
               </ul>
               <div class="popup-buttons">
                 <button type="button" class="btn project-button">
-                        <a class="btn-live"href="${projects[position].liveLink}">
+                        <a class="btn-live"href="${projects[position].liveLink}" target="_blank" rel="noopener noreferrer">
                           See live &nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-box-arrow-up-right"></i>
                         </a>
                 </button>
                 <button type="button" class="btn project-button">
-                        <a class="btn-live"href="${projects[position].sourceCode}">
+                        <a class="btn-live"href="${projects[position].sourceCode}" target="_blank" rel="noopener noreferrer">
                           See Source&nbsp;&nbsp;&nbsp;
                           <i class="btnicon bi bi-github"></i>
                         </a>

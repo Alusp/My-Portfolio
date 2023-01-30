@@ -60,7 +60,7 @@ const projects = [
       year: '2022',
     },
     description:
-      'TODO-LIST is a project that is based on the ability to create a list of things you want to do throughout the day. It has an add Remove Feature with Interactive list.',
+      'TODO-LIST is a project that is based on the ability to create a list of things you want to do throughout the day. It has an add Remove Feature with an interactive list.',
     languages: ['html', 'css', 'javascript'],
     liveLink: 'https://alusp.github.io/ToDolist/?',
     sourceCode: 'https://github.com/Alusp/ToDolist',
@@ -170,7 +170,6 @@ projectnBtn.forEach((btn, ind) => {
   });
 });
 
-// ######################## Contact Form Validation Section #######################
 const form = document.querySelector('.forms');
 const validateEmail = (email) => {
   if (email !== email.toLowerCase()) return false;
@@ -190,7 +189,6 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
-// ############################# Browser Data Storage ###################################
 const formData = {
   name: document.querySelector('.form-name').value,
   email: document.querySelector('.form-email').value,

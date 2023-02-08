@@ -54,6 +54,7 @@ header a h1 {
   font-size: 26px;
   animation-duration: 3s;
   animation-name: slidein;
+  padding-left: 5px;
 }
 
 @keyframes slidein {
@@ -694,6 +695,7 @@ ul {
   display: flex;
   flex-direction: column;
   margin-left: 3em;
+  padding-left: 20px;
 }
 
 .lang-container {
@@ -711,6 +713,15 @@ ul {
   line-height: 20px;
   color: #253858;
   margin-bottom: 12px;
+  padding: 9px 12px;
+}
+
+.skill-item {
+  background: var(--bg-color);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
   padding: 9px 12px;
 }
 
@@ -895,6 +906,31 @@ nav .menu-open li {
 
 .close {
   justify-content: flex-end;
+}
+
+details {
+  user-select: none;
+}
+
+details > summary span.icon {
+  position: absolute;
+  right: 150px;
+  width: 24px;
+  transition: all 0.3s;
+}
+
+details[open] summary span.icon {
+  transform: rotate(90deg);
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+  padding-right: 90px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
